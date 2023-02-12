@@ -80,6 +80,7 @@ SettingsからSSHKeyが登録されていることを確認。
 2. クローンを実行
     - `git clone git@github.com:han-cucu/mau-j2n.git`
 3. worningが発生した。
+    ![clone_worning](/clone_worning.png)  
     > Cloning into 'mau-j2n'...
     warning: You appear to have cloned an empty repository
     - *空のリポジトリをクローンすることはできないようだった*
@@ -89,7 +90,8 @@ SettingsからSSHKeyが登録されていることを確認。
 
 Githubで案内されている方法に則り、
 ローカルリポジトリを作成してから、リモートリポジトリに登録することにする。  
-こちらを参考にした
+以下の案内を参考にした。  
+![create_a_new_repository](/create_a_new_repository.png)  
 
 
 手順を以下に変更した。
@@ -151,6 +153,8 @@ Githubで案内されている方法に則り、
 - 修正1. VSCodeで編集していたREADMEのパスとリポジトリにコミットしたREADMEのパスがずれていたため、READMEの内容が古くなっていた。最新のファイルを置き換えて修正。VSCodeで編集中のパスにファイルが存在しない場合、保存するとファイルが生成されてしまうようだった。
 
 - 修正2. 改行をいれた。VSCodeのプラグインであるMarkDown Preview Enhancedでは改行コード無しで改行してくれるようで、Github上で見たときに改行がされていないことに気づいた。
+
+- 修正3. 画像を追加した。
 
 
 
