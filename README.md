@@ -62,12 +62,12 @@ Markdown記法で文章を書く際は、特定の記号を使うことで段落
 7. 閲覧できたら、修正が必要な箇所を探し修正する。(5.と同様の反映方法)
 <br>
 
-##### GitHubアカウントの確認
+##### 1.GitHubにログイン
 GitHubにログインする。
 SettingsからSSHKeyが登録されていることを確認。
 <br>
 
-##### GitHubのGUIでリモートリポジトリの作成
+##### 2.GitHubのGUIでリモートリポジトリの作成
 
 1. GitHubページの右上の +ボタン>New Repositoryをクリック 
 2. リポジトリの情報を入力する
@@ -76,7 +76,7 @@ SettingsからSSHKeyが登録されていることを確認。
 3. [Create Repository]をクリックし、リポジトリが作成された
 <br>
 
-##### リモートリポジトリをローカルにクローン
+##### 3.リモートリポジトリをローカルにクローン
 1. mau-j2nディレクトリを作成した
 2. クローンを実行
     - `git clone git@github.com:han-cucu/mau-j2n.git`
@@ -99,19 +99,61 @@ Githubで案内されている方法に則り、
     * リポジトリ名は**mau-j2n**
 3. ~~リモートリポジトリをローカルにクローン~~
 4. ~~予め作成していたREADME.mdをリポジトリ配下におく~~
-3. ローカルリポジトリを作成、READMEをコミット
+5. ローカルリポジトリを作成、READMEをコミット
     - cd mau-j2n
     - git init
     - git add README.md
     - git commit -m "add README"
     - git remote add origin git@github.com:han-cucu/mau-j2n.git
     - git push
-4. CUIのgit操作により変更をリモートリポジトリへ反映する
+6. CUIのgit操作により変更をリモートリポジトリへ反映する
     - git add README.md
     - git commit -m "git init"
     - git push
-5. GitHub上で、README.mdが閲覧できることを確認する。
-6. 閲覧できたら、修正が必要な箇所を探し修正する。(5.と同様の反映方法)
+7. GitHub上で、README.mdが閲覧できることを確認する。
+8. 閲覧できたら、修正が必要な箇所を探し修正する。(5.と同様の反映方法)
+<br>
+
+##### 5.ローカルリポジトリを作成、READMEをコミット
+
+*作業を開始しようとしたところ、**3.リモートリポジトリをローカルにクローン**で行ったクローンに成功していることに気づいた、、クローン後にgit statusが使えなかったのでクローンに失敗していると勘違いしてしまった。ひとつ下の階層にクローンされていた*
+
+もともと予定していた以下の手順で作成することにする。
+
+>1. githubにログイン
+>2. githubのGUIでリモートリポジトリを作成
+>    * リポジトリ名は**mau-j2n**
+>3. リモートリポジトリをローカルにクローン
+>4. 予め作成していたREADME.mdをリポジトリ配下におく
+>5. CUIのgit操作により変更をリモートリポジトリへ反映する
+>    - git add README.md
+>    - git commit -m "git init"
+>    - git push
+>6. GitHub上で、README.mdが閲覧できることを確認する。
+>7. 閲覧できたら、修正が必要な箇所を探し修正する。(5.と同様の反映方法)
+<br>
+
+##### 4. 予め作成していたREADME.mdをリポジトリ配下におく
+- mau-j2n/README.mdとなるように配置した
+- `git status`で変更差分となっていることを確認
+<br>
+
+##### 5. CUIのgit操作により変更をリモートリポジトリへ反映する
+- `git add README.md`
+- `git commit -m "add README"`
+- `git push`
+<br>
+
+##### 6. GitHub上で、README.mdが閲覧できることを確認する
+- https://github.com/han-cucu/mau-j2n にアクセスし、READMEが読めることを確認した
+<br>
+
+##### 7. 閲覧できたら、修正が必要な箇所を探し修正する。(5.と同様の反映方法)
+- 修正1. VSCodeで編集していたREADMEのパスとリポジトリにコミットしたREADMEのパスがずれていたため、READMEの内容が古くなっていた。最新のファイルを置き換えて修正。VSCodeで編集中のパスにファイルが存在しない場合、保存するとファイルが生成されてしまうようだった。
+
+
+
+
 
 
 
